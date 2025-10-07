@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/zarateandric/mi-portafolio-datos/static/css/main.dac7aeab.css",
+    "main.js": "/zarateandric/mi-portafolio-datos/static/js/main.f181af37.js",
+    "static/js/453.da2ecc40.chunk.js": "/zarateandric/mi-portafolio-datos/static/js/453.da2ecc40.chunk.js",
+    "index.html": "/zarateandric/mi-portafolio-datos/index.html",
+    "main.dac7aeab.css.map": "/zarateandric/mi-portafolio-datos/static/css/main.dac7aeab.css.map",
+    "main.f181af37.js.map": "/zarateandric/mi-portafolio-datos/static/js/main.f181af37.js.map",
+    "453.da2ecc40.chunk.js.map": "/zarateandric/mi-portafolio-datos/static/js/453.da2ecc40.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dac7aeab.css",
+    "static/js/main.f181af37.js"
+  ]
+}
