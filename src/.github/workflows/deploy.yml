@@ -1,0 +1,48 @@
+# Nombre del flujo de trabajo
+name: Deploy React App to GitHub Pages
+
+# Disparadores: Cuándo se debe ejecutar esta acción
+on:
+  # Se ejecuta cada vez que haces 'push' a la rama 'main'
+  push:
+    branches: [ "main" ] 
+  
+  # Te permite ejecutar este flujo manualmente desde la pestaña 'Actions' en GitHub
+  workflow_dispatch:
+
+# Tareas: Qué debe hacer
+jobs:
+  # Nombre de la tarea
+  build-and-deploy:
+    # La máquina virtual donde se ejecutará (Ubuntu es la más común)
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Clona tu repositorio en la máquina virtual
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Configura el entorno de Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18' # Puedes cambiar '18' por la versión de Node que uses
+          cache: 'npm' # Habilita la caché para 'npm' para instalaciones más rápidas
+
+      # 3. Instala las dependencias del proyecto
+      - name: Install dependencies
+        run: npm install
+
+      # 4. Construye la aplicación de React (ejecuta 'npm run build')
+      - name: Build
+        run: npm run build
+
+      # 5. Despliega los archivos construidos (la carpeta 'build') a la rama 'gh-pages'
+      # Esta acción (de 'peaceiris') se encarga de todo el trabajo sucio
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          # Token secreto que GitHub provee automáticamente para permitir el push
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # El directorio que contiene los archivos estáticos a desplegar
+          publish_dir: ./build
