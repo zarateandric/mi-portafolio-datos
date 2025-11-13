@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/mi-portafolio-datos/static/css/main.dac7aeab.css",
-    "main.js": "/mi-portafolio-datos/static/js/main.0e479003.js",
+    "main.js": "/mi-portafolio-datos/static/js/main.5a5945e9.js",
     "static/js/453.da2ecc40.chunk.js": "/mi-portafolio-datos/static/js/453.da2ecc40.chunk.js",
     "index.html": "/mi-portafolio-datos/index.html",
     "main.dac7aeab.css.map": "/mi-portafolio-datos/static/css/main.dac7aeab.css.map",
-    "main.0e479003.js.map": "/mi-portafolio-datos/static/js/main.0e479003.js.map",
+    "main.5a5945e9.js.map": "/mi-portafolio-datos/static/js/main.5a5945e9.js.map",
     "453.da2ecc40.chunk.js.map": "/mi-portafolio-datos/static/js/453.da2ecc40.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dac7aeab.css",
-    "static/js/main.0e479003.js"
+    "static/js/main.5a5945e9.js"
   ]
 }
