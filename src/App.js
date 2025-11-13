@@ -18,8 +18,8 @@ const NAV_LINKS = [
 ];
 
 const ANALYST_SKILLS = [
-  { category: 'Coding & Data Bases', items: ['Python (Pandas, NumPy, Scikit-learn)', 'SQL (PostgreSQL, MySQL)'], icon: Code },
-  { category: 'Visualization & BI', items: ['Tableau', 'Power BI', 'Matplotlib / Seaborn', 'Looker Studio'], icon: BarChart2 },
+  { category: 'Coding & Data Bases', items: ['Python (Pandas, NumPy)', 'SQL (MySQL)'], icon: Code },
+  { category: 'Visualization & BI', items: [/*'Tableau',*/ 'Power BI', 'Matplotlib'], icon: BarChart2 },
   // { category: /*'Estadística & Machine Learning'*/'Soft skills', items: ['Regresión', 'Clustering (K-means)', 'Análisis de series de tiempo', 'Pruebas A/B'], icon: TrendingUp },
   {category: 'Soft-skills', items:['Teamwork', 'Adaptability', 'Self-management',  'Project Development and Support'], icon: Handshake},
   { category: 'Tools', items: ['Git/GitHub', 'Excel', 'Jupyter/Colab'], icon: HardDrive },
@@ -30,14 +30,14 @@ const DATA_PROJECTS = [
     title: "Dashboard Restaurant Data Analysis with Power BI",
     description: "Creation of an interactive Dashboard for a restaurant, fully developed in Power BI. The main goal was to transform raw sales and operations data into actionable insights, utilizing key tools such as Power Query for data preparation and DAX formulas for creating advanced metrics.",
     tags: ["Power Query", "Power BI", "DAX", "Visualization"],
-    link: "https://github.com/zarateandric/restaurant-dashboard.git" // Reemplaza con tu enlace de GitHub
+    link: "https://github.com/zarateandric/restaurant-dashboard" // Reemplaza con tu enlace de GitHub
   },
-  // {
-  //   title: "Optimización de Inventario con Series de Tiempo",
-  //   description: "Implementación de un modelo ARIMA para pronosticar la demanda de productos clave. Reducción del 10% en el stock de seguridad, liberando capital de trabajo.",
-  //   tags: ["R", "Series de Tiempo", "Visualización", "Estadística"],
-  //   link: "https://github.com/tu_usuario/proyecto_inventario"
-  // },
+  {
+     title: "End-to-End Analysis of Ecobici CDMX",
+     description: "This project is a portfolio analysis that simulates a real business case. The objective was to build a complete data pipeline (ETL) and a Business Intelligence dashboard to analyze the behavior of users of the Ecobici system in Mexico City.",
+     tags: ["Python", "MySQL", "Power BI", "DAX","Pandas","beautifulsoup4","Power Query"],
+     link: "https://app.powerbi.com/view?r=eyJrIjoiZDVjZGZiMmQtYjk3Ni00YTU3LWFiMmQtMzlkMzUwODEwOTI5IiwidCI6IjVmMjgyOTEwLTE3NmYtNDU5ZC1hYjdkLWI3NDRhYTZlZmMwNyIsImMiOjR9"
+   },
   // {
   //   title: "Dashboard Interactivo de Ventas Globales",
   //   description: "Diseño y construcción de un dashboard en Tableau para monitorear el rendimiento de ventas en tiempo real, segmentado por región y canal. (Enlace a Tableau Public).",
@@ -229,7 +229,7 @@ const App = () => {
           </div>
           <div className="mt-12 text-center">
             <a
-              href="https://github.com/zarateandric" // Reemplaza con tu GitHub
+              href="https://github.com/zarateandric?tab=repositories" // Reemplaza con tu GitHub
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 text-base font-semibold text-indigo-600 transition duration-300 border border-indigo-300 rounded-full hover:bg-indigo-50"
@@ -324,7 +324,7 @@ const ProjectCard = ({ project }) => (
       rel="noopener noreferrer"
       className="inline-flex items-center justify-center w-full px-4 py-2 text-sm font-semibold text-white transition duration-300 bg-slate-800 rounded-lg hover:bg-slate-900"
     >
-      View Repository (GitHub/Tableau)
+      View Repository (GitHub/Power BI)
       <GitBranch className="w-4 h-4 ml-2" />
     </a>
   </div>
