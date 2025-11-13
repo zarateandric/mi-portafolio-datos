@@ -17,6 +17,9 @@ jobs:
     # La máquina virtual donde se ejecutará (Ubuntu es la más común)
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
       # 1. Clona tu repositorio en la máquina virtual
       - name: Checkout code
