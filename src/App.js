@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {
-  Briefcase, Code, Database, TrendingUp, User, Mail, Smartphone,
-  BarChart2, Zap, GitBranch, ArrowUp, X, Menu, HardDrive, Cpu, Layers,
+  Briefcase, Code, Database, /*TrendingUp*/ User, Mail, Smartphone,
+  BarChart2, Zap, GitBranch, ArrowUp, X, Menu, HardDrive, /*Cpu*/ Layers,
   Handshake,
   House
 } from 'lucide-react';
